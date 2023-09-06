@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        alert("Greetings to all ageUK personnel, volunteers and service users. \n \n  Click OK to Continue")
+        </script>
+</head>
+<body>
+    
+        <h2>Place one grain of rice on the first square of a chessboard then subsequently keep doubling the rice grains as you step onto the next square.</h2>
+        
+        <div id='seconds-counter'> </div>
+        
+        <p id="demo"></p>
+        
+        <script>
+        
+        var seconds = -1;
+        var el = document.getElementById('seconds-counter');
+        
+        function incrementSeconds() {
+            seconds++     //+=1;
+            el.innerText = "You have been here for " + (1 + seconds) + " Seconds.";
+        
+        var y = Math.pow(2, seconds);
+        
+        v = document.getElementById("demo");
+        
+        v.innerHTML += "<br>" + "Square " + (1 + seconds) + " ----  " + y + " Grains";
+        //}
+            
+                if (seconds >= 63) {
+                    clearInterval(prince); 
+        }}
+        const prince = setInterval(incrementSeconds, 1000);
+        
+        //function stopColor() {
+         // clearInterval(myInterval);
+        
+          const button = document.createElement('button');
+        // document.getElementById("myBtn").style.left = "100px";
+        
+            button.style.width = "300px";
+              button.style.height = "100px";
+            button.style.border = "thick solid #0000FF";
+            button.style.fontSize = "1.5rem";
+        
+            button.innerText = 'Click to Stop Count'
+        
+                //button.id = 'mainButton'
+        
+              // Attach the "click" event to your button
+              button.addEventListener('click', () => {
+                
+                alert('Click OK to Continue Square Count. \n \n A big thank you to Leonie Puvis for \n allowing me to make my debut on the \n ageUK monthly staff bulletin board. \n kindest regards, Stephen Herbert');
+        
+              })
+             document.body.appendChild(button);
+
+        </script>
+</body>
+</html>
